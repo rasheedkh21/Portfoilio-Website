@@ -1,4 +1,4 @@
-import img from "../../assets/6E852404-48ED-44DB-9D1D-CB5F2CBE37AE_1_105_c.jpeg"
+import img from "../../assets/standingme.jpg"
 import CV from "./cv";
 
 

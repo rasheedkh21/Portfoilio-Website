@@ -1,50 +1,46 @@
+
+
 {
   "skills": [
     {
       "id": "1",
       "src": "./img/product-chain-1.png",
       "title": "Front-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "HTML, CSS, JS, React-JS, Tailwind-CSS, MUI, Responsive Web skills. More than 1 years of learning experience."
     },
     {
       "id": "2",
       "src": "./img/tag-1.png",
       "title": "Back-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-    },
-    {
-      "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "UI & UX Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "Able to work in different popular programming languages including Node-JS, Java-Script and Python"
     },
     {
       "id": "4",
       "src": "./img/feather-pen-1.png",
       "title": "Webflow Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": " I build, and launch responsive websites — visually. Experienced the power of HTML, CSS, and JavaScript."
     }
   ],
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/placeholder-image.png",
+      "src": "./img/camper.jpg",
       "title": "Camper for Camping",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "Camper is my first special full stack project with admin and client pages. ",
       "link": "View In Github"
     },
     {
       "id": "2",
-      "src": "./img/placeholder-image-1.png",
+      "src": "./img/lms.jpg",
       "title": "LMS Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "description": "LMS Dashboard is a website to upload video lessons for students thank provides vareity of possibilites. Different Fronted tools used.",
       "link": "View In Github"
     },
     {
       "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "src": "./img/menu.jpg",
+      "title": "Restaurant UI Menu",
+      "description": "This is my first Tailwind CSS project.",
       "link": "View In Github"
     }
   ],
@@ -53,8 +49,8 @@
       "id": "1",
       "count": "5",
       "src": "./img/avatar-image.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Mehammand Bekzod ",
+      "description": "Abdurashid is a boy who never stops on the way his dreams. As his teacher I beleive he can handle every problem that he face.",
+      "author_name": "Muhammad Bekzod ",
       "author_designation": "BeCoder"
     }
   ]

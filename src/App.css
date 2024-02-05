@@ -343,7 +343,7 @@ h2 {
 }
 .portfolio--section--container {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 42.6px;
   width: 100%;

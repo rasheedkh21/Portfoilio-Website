@@ -1,4 +1,4 @@
-import aboute from "../../assets/1C5AC65B-8F82-4E0D-A731-23713C489BA6_1_105_c.jpeg"
+import aboute from "../../assets/coveredme.jpg"
 
 
 export default function AboutMe() {
