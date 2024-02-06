@@ -1,14 +1,37 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 export default function ContactMe() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm("service_29x5e49", "template_g3bc9ot", form.current, {
+        publicKey: "oEMDlAxcOzHCR_XMu",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <section id="Contact" className="contact--section">
       <div>
         <p className="sub--title">Get In Touch</p>
         <h2>Contact Me</h2>
-        <p className="text-lg">
-          You can send your questions directly to me:)
-        </p>
+        <p className="text-lg">You can send your questions directly to me:)</p>
       </div>
-      <form className="contact--form--container">
+      <form
+        className="contact--form--container"
+        ref={form}
+        onSubmit={sendEmail}
+      >
         <div className="container">
           <label htmlFor="first-name" className="contact--label">
             <span className="text-md">First Name</span>
