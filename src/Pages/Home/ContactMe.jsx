@@ -7,12 +7,14 @@ export default function ContactMe() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_29x5e49", "template_g3bc9ot", form.current, {
+    emailjs
+      .sendForm("service_29x5e49", "template_tpkojez", form.current, {
         publicKey: "oEMDlAxcOzHCR_XMu",
       })
       .then(
         () => {
           console.log("SUCCESS!");
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -33,22 +35,12 @@ export default function ContactMe() {
         onSubmit={sendEmail}
       >
         <div className="container">
-          <label htmlFor="first-name" className="contact--label">
-            <span className="text-md">First Name</span>
-            <input
-              type="text"
-              className="contact--input text-md"
-              name="first-name"
-              id="first-name"
-              required
-            />
-          </label>
           <label htmlFor="last-name" className="contact--label">
-            <span className="text-md">Last Name</span>
+            <span className="text-md">Name</span>
             <input
               type="text"
               className="contact--input text-md"
-              name="last-name"
+              name="user_name"
               id="last-name"
               required
             />
@@ -58,7 +50,7 @@ export default function ContactMe() {
             <input
               type="email"
               className="contact--input text-md"
-              name="email"
+              name="user_email"
               id="email"
               required
             />
@@ -68,7 +60,7 @@ export default function ContactMe() {
             <input
               type="number"
               className="contact--input text-md"
-              name="phone-number"
+              name="user_number"
               id="phone-number"
               required
             />
@@ -78,6 +70,7 @@ export default function ContactMe() {
           <span className="text-md">Message</span>
           <textarea
             className="contact--input text-md"
+            name="message"
             id="message"
             rows="8"
             placeholder="Type your message..."
