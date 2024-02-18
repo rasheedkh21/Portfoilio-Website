@@ -744,5 +744,32 @@ input[type="checkbox"] {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
 }
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero--section--img img {
+  animation: slideInFromLeft 1s ease-in-out; /* Apply animation to the img */
+}
+
+.animated-text {
+  animation: fadeIn 1s ease-in-out; /* Apply animation to the text */
+}
 
 /* Responsive Screens Ends*/
